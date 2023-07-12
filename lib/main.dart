@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:task_manager/practise.dart';
 import 'package:task_manager/task%20model.dart';
 
 import 'home view.dart';
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Task Manager',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -38,7 +40,8 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.white,
             iconTheme: IconThemeData(color: Colors.black)),
       ),
-      home: HomeView(),
+      home:
+      HomeView(),
     );
   }
 }
